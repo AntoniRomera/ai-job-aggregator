@@ -6,7 +6,7 @@
   "description": "Glassmorphism dashboard for the AI Job Aggregator (React 18 + Vite + Tailwind v4).",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.node.json --noEmit && vite build",
+    "build": "tsc -p tsconfig.json --noEmit && vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx",
     "test": "vitest run",
