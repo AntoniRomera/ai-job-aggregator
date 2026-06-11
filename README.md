@@ -5,6 +5,8 @@
 **🔗 Live demo:** https://antoniromera.github.io/ai-job-aggregator/ — the dashboard running on its built-in mock data (no backend required).
 
 [![CI](https://github.com/AntoniRomera/ai-job-aggregator/actions/workflows/ci.yml/badge.svg)](https://github.com/AntoniRomera/ai-job-aggregator/actions/workflows/ci.yml)
+
+![AI Job Aggregator dashboard](docs/dashboard.png)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688)
 ![Python](https://img.shields.io/badge/Python-3.11%2B-3776ab)
