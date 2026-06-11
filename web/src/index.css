@@ -1,0 +1,46 @@
+/* Tailwind v4 entry — config-less. The single import below pulls in Tailwind;
+   theme tokens go in the @theme block. No tailwind.config.js / postcss.config.js. */
+@import "tailwindcss";
+
+@theme {
+  --color-bg-from: #0f172a;
+  --color-bg-via: #1e1b4b;
+  --color-bg-to: #312e81;
+  --color-glass: rgba(255, 255, 255, 0.08);
+  --color-glass-border: rgba(255, 255, 255, 0.18);
+  --color-accent: #818cf8;
+  --color-accent-soft: #a5b4fc;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-display);
+  min-height: 100vh;
+  color: #e2e8f0;
+  background: radial-gradient(
+      circle at 20% 20%,
+      rgba(129, 140, 248, 0.25),
+      transparent 40%
+    ),
+    radial-gradient(circle at 80% 0%, rgba(236, 72, 153, 0.18), transparent 45%),
+    linear-gradient(
+      135deg,
+      var(--color-bg-from),
+      var(--color-bg-via),
+      var(--color-bg-to)
+    );
+  background-attachment: fixed;
+}
+
+/* Reusable glassmorphism surface. */
+@utility glass {
+  background: var(--color-glass);
+  border: 1px solid var(--color-glass-border);
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+}

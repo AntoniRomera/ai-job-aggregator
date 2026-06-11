@@ -1,0 +1,3 @@
+# Keep the data directory in version control. The runtime database (jobs.db) is
+# generated here on first `python -m collector run` and is gitignored. The
+# committed seed dataset lives alongside this file as seed_jobs.json.

@@ -1,0 +1,37 @@
+[project]
+name = "ai-job-aggregator"
+version = "0.1.0"
+description = "Collects job postings, estimates salary ranges with an LLM, and serves them via FastAPI for a React dashboard."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "Antoni Romera Luis" }]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["collector", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "C4", "SIM"]
+ignore = [
+    "B008",   # FastAPI uses function calls in argument defaults (Depends/Query)
+    "UP017",  # keep datetime.timezone.utc (portable, explicit) over datetime.UTC
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.mypy]
+python_version = "3.11"
+warn_unused_ignores = true
+warn_redundant_casts = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+plugins = ["pydantic.mypy"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+addopts = "-ra"
