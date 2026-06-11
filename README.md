@@ -2,6 +2,8 @@
 
 > Collects job postings from public job boards, estimates a salary range for each using an LLM, and surfaces them in a clean React + Tailwind dashboard.
 
+**🔗 Live demo:** https://antoniromera.github.io/ai-job-aggregator/ — the dashboard running on its built-in mock data (no backend required).
+
 [![CI](https://github.com/AntoniRomera/ai-job-aggregator/actions/workflows/ci.yml/badge.svg)](https://github.com/AntoniRomera/ai-job-aggregator/actions/workflows/ci.yml)
 ![React](https://img.shields.io/badge/React-18-61dafb)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688)
